@@ -25,9 +25,9 @@
 Welcome to Apache CloudStack's Documentation
 ============================================
 
-We have a number of guides, starting with a guide to cloudstack's terminology and concepts, moving through some information about possible topologies.  We then have a quick start guide to help you get a very simple cloudstack up and running.  Followed by the full installation guide, an administrator's guide and then further detailed guides on complex configurations.
+该系列指南，从 CloudStack 的术语和概念开始讲解，一步步引导您了解一些真实可用的部署架构。《快速入门指南》可以帮你建立并运行一个简单的 CloudStack。完整版《安装指南》和《管理员手册》可以帮您深入了解更加详细和复杂的设置。
 
-Information can also be found at CloudStack's wiki https://cwiki.apache.org/confluence/display/CLOUDSTACK/Home and on cloudstack mailing lists http://cloudstack.apache.org/mailing-lists.html
+您也可以从 CloudStack wiki https://cwiki.apache.org/confluence/display/CLOUDSTACK/Home 和社区邮件组 http://cloudstack.apache.org/mailing-lists.html获取想要的信息。
 
 .. toctree::
    :maxdepth: 3
@@ -46,10 +46,10 @@ Information can also be found at CloudStack's wiki https://cwiki.apache.org/conf
 .. toctree::
    :caption: Other Documentation:
 
-   API Documentation <http://cloudstack.apache.org/api.html>
+   API 文档 <http://cloudstack.apache.org/api.html>
    Apache CloudStack Wiki <https://cwiki.apache.org/confluence/display/CLOUDSTACK/Home>
-   Apache CloudStack web site <http://cloudstack.apache.org/>
-   Apache CloudStack Source Code <http://cloudstack.apache.org/downloads.html>
+   Apache CloudStack 官网 <http://cloudstack.apache.org/>
+   Apache CloudStack 源码 <http://cloudstack.apache.org/downloads.html>
    Apache CloudStack on GitHub <https://github.com/apache/cloudstack>
 
 

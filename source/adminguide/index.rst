@@ -22,12 +22,12 @@
 |menu_acs_logo|
 
 
-Usage Guide
+管理员手册
 ===========
 
-This guide is aimed at Administrators of a CloudStack based Cloud
+本章内容面向CloudStack 管理员
 
-User Interface
+用户界面
 --------------
 
 .. toctree::
@@ -36,7 +36,7 @@ User Interface
    ui
 
 
-Managing Accounts, Users and Domains
+账户、用户和域
 ------------------------------------
 
 .. toctree::
@@ -45,7 +45,7 @@ Managing Accounts, Users and Domains
    accounts
 
 
-Using Projects to Organize User Resources
+使用项目视图来管理用户资源
 ------------------------------------------
 .. toctree::
    :maxdepth: 4 
@@ -53,7 +53,7 @@ Using Projects to Organize User Resources
    projects
 
 
-Service Offerings
+计算方案
 -----------------
 
 .. toctree::
@@ -62,7 +62,7 @@ Service Offerings
    service_offerings
 
 
-Setting up Networking for Users
+设置用户网络
 -------------------------------
 
 .. toctree::
@@ -72,7 +72,7 @@ Setting up Networking for Users
    autoscale_without_netscaler
 
 
-Working with Virtual Machines
+虚拟机
 -----------------------------
 
 .. toctree::
@@ -81,7 +81,7 @@ Working with Virtual Machines
    virtual_machines
 
 
-Working with Templates
+模板
 ----------------------
 
 .. toctree::
@@ -90,7 +90,7 @@ Working with Templates
    templates
 
 
-Working with Hosts
+主机
 ------------------
 
 .. toctree::
@@ -99,7 +99,7 @@ Working with Hosts
    hosts
 
 
-Working with Storage
+存储
 --------------------
 
 .. toctree::
@@ -108,7 +108,7 @@ Working with Storage
    storage
 
 
-Working with System Virtual Machines
+系统虚拟机
 ------------------------------------
 
 .. toctree::
@@ -117,7 +117,7 @@ Working with System Virtual Machines
    systemvm
 
 
-Working with Usage
+用量服务
 ------------------
 
 .. toctree::
@@ -126,7 +126,7 @@ Working with Usage
    usage
 
 
-Managing Networks and Traffic
+管理网络和流量
 -----------------------------
 
 .. toctree::
@@ -136,7 +136,7 @@ Managing Networks and Traffic
    networking/using_remote_access
 
 
-Managing the Cloud
+管理云平台
 ------------------
 
 .. toctree::
@@ -145,7 +145,7 @@ Managing the Cloud
    management
 
 
-System Reliability and Availability
+系统的可靠性和可用性
 -----------------------------------
 
 .. toctree::
@@ -154,7 +154,7 @@ System Reliability and Availability
    reliability
 
 
-Tuning
+调优
 ------
 
 .. toctree::
@@ -163,7 +163,7 @@ Tuning
    tuning
 
 
-Events and Troubleshooting
+事件和故障排除
 --------------------------
 
 .. toctree::

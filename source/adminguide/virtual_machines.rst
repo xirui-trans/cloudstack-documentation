@@ -14,10 +14,10 @@
    under the License.
    
 
-Working with Virtual Machines
+虚拟机
 =============================
 
-About Working with Virtual Machines
+关于虚拟机
 -----------------------------------
 
 CloudStack provides administrators with complete control over the

@@ -21,14 +21,15 @@
 |menu_acs_logo|
 
 
-CloudStack Concepts and Terminology
+CloudStack 概念和术语
 ===================================
 
-This is the Apache CloudStack installation guide. In this guide we first go through some design and architectural to build your cloud. 
+本章节是 Apache CloudStack 安装指南。
+首先我们介绍一些和部署云平台相关的设计和架构。
 
 .. toctree::
 
-Concepts and Terminolgy
+概念和术语
 ------------------------
 .. toctree::
    :maxdepth: 2
@@ -37,7 +38,7 @@ Concepts and Terminolgy
 
 .. architecture:
 
-Choosing a Deployment Architecture
+架构选型
 ----------------------------------
 .. toctree::
    :maxdepth: 2
@@ -46,7 +47,7 @@ Choosing a Deployment Architecture
 
 .. _network:
 
-Network Setup
+网络配置
 -------------
 .. toctree::
    :maxdepth: 2
@@ -56,7 +57,7 @@ Network Setup
 .. _storage:
 
 
-Storage Setup
+存储配置
 -------------
 .. toctree::
    :maxdepth: 2

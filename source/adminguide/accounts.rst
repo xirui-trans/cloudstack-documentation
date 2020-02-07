@@ -14,92 +14,79 @@
    under the License.
  
 
-Roles, Accounts, Users, and Domains
+角色, 账户, 用户, 域
 -----------------------------------
 
-Roles
+角色
 ~~~~~
 
-A role represents a set of allowed functions. All CloudStack accounts have a
-role attached to them that enforce access rules on them to be allowed or
-disallowed to make an API request. Typically there are four default roles:
-root admin, resource admin, domain admin and user.
+角色代表了一组操作的集合。
+所有的CloudStack账户都必须绑定一个角色，以便管理他们的访问权限和限制API请求。
+有几个默认的角色：root 管理员，资源管理员，域管理员和普通用户。
 
 
-Accounts
+账户
 ~~~~~~~~
 
-An account typically represents a customer of the service provider or a
-department in a large organization. Multiple users can exist in an
-account.
+账户代表服务提供商的客户或者一个大型组织机构中的部门。
+一个账户下可以有多个用户。
 
 
-Domains
+域
 ~~~~~~~
 
-Accounts are grouped by domains. Domains usually contain multiple
-accounts that have some logical relationship to each other and a set of
-delegated administrators with some authority over the domain and its
-subdomains. For example, a service provider with several resellers could
-create a domain for each reseller.
+账户按域进行分组。
+域通常包含多个账户，这些账户之间有一定的逻辑关系，并且共用一组有特殊权限的管理员来对该域及其子域进行管理。
+例如，具有多个分销商的服务提供商，可以为每个经销商创建一个域。
 
-For each account created, the Cloud installation creates three different
-types of user accounts: root administrator, domain administrator, and
-user.
+每个账户创建的时候，CloudStack会创建3个默认的用户账户：
+root 管理员，域管理员和普通用户。
 
 
-Users
+用户
 ~~~~~
 
-Users are like aliases in the account. Users in the same account are not
-isolated from each other, but they are isolated from users in other
-accounts. Most installations need not surface the notion of users; they
-just have one user per account. The same user cannot belong to multiple
-accounts.
+用户比较类似于账户的别名。
+同一个账户下的用户之间不进行隔离，不同账户下的用户是隔离的。
+大多数安装不需要关注用户这个概念，他们每个账户下只有一个用户。
+同一个用户不能从属于多个账户。
 
-Username is unique in a domain across accounts in that domain. The same
-username can exist in other domains, including sub-domains. Domain name
-can repeat only if the full pathname from root is unique. For example,
-you can create root/d1, as well as root/foo/d1, and root/sales/d1.
+用户名再域中的账户下是唯一的。
+不同域或子域下可以有相同的用户名。
+域名的完整路径不能重复。
+例如：可以创建root/d1, root/foo/d1, root/sales/d1。
 
-Administrators are accounts with special privileges in the system. There
-may be multiple administrators in the system. Administrators can create
-or delete other administrators, and change the password for any user in
-the system.
+管理员是具有特殊权限的账户。
+系统中可能有多个系统管理员。
+管理员可以创建或者删除其它管理员，可以修改任意用户的密码。
 
 
-Domain Administrators
+域管理员
 ~~~~~~~~~~~~~~~~~~~~~
 
-Domain administrators can perform administrative operations for users
-who belong to that domain. Domain administrators do not have visibility
-into physical servers or other domains.
+域管理员可以管理该域下的用户。
+域管理员不能查看物理服务器和其他域。
 
 
-Root Administrator
+Root 管理员
 ~~~~~~~~~~~~~~~~~~
 
-Root administrators have complete access to the system, including
-managing templates, service offerings, customer care administrators, and
-domains
+Root 管理员拥有系统的完整访问权限，包括管理模板、计算服务、customer care administrators、域等。
 
 
-Resource Ownership
+资源归属
 ~~~~~~~~~~~~~~~~~~
 
-Resources belong to the account, not individual users in that account.
-For example, billing, resource limits, and so on are maintained by the
-account, not the users. A user can operate on any resource in the
-account provided the user has privileges for that operation. The
-privileges are determined by the role. A root administrator can change
-the ownership of any virtual machine from one account to any other
-account by using the assignVirtualMachine API. A domain or sub-domain
-administrator can do the same for VMs within the domain from one account
-to any other account in the domain or any of its sub-domains.
+资源属于账户而不是账户下的用户。
+例如: 账单，资源限制等等是基于账户而不是用户来维护的。
+用户可以操作其账户下的任何资源(账户对这些资源有操作权限，这些权限取决于账户绑定的角色)。
+Root 账户可以通过assignVirtualMachine API 来修改任一虚拟机的归属，
+将其分配给其他的账户。
+域或子域的管理员也可以做类似的操作，在域或子域内，将虚拟机分配给域内的其他账户。
 
 .. _using-dynamics-roles:
 
-Using Dynamic Roles
+动态角色
 -------------------
 
 In addition to the four default roles, the dynamic role-based API checker feature
@@ -181,7 +168,7 @@ file on all management servers typically in /etc/cloudstack/management path,
 after running the migration tool for the first management server
 
 
-Dedicating Resources to Accounts and Domains
+给账户和域分配资源
 --------------------------------------------
 
 The root administrator can dedicate resources to a specific domain or
@@ -208,8 +195,7 @@ There are several types of dedication available:
    infrastructure if possible. Otherwise, the VM can be deployed in
    shared infrastructure.
 
-
-How to Dedicate a Zone, Cluster, Pod, or Host to an Account or Domain
+将资源域、集群、机架和主机分配给账户或域
 ----------------------------------------------------------------------
 
 For explicit dedication: When deploying a new zone, pod, cluster, or
@@ -332,7 +318,7 @@ You will need to know the path to the keystore and the password.
 -  ``ldap.truststore.password`` : truststore password
 
 
-LDAP groups:
+LDAP 组:
 ~~~~~~~~~~~~
 
 -  ``ldap.group.object``: object type of groups within LDAP. Default value is
@@ -358,7 +344,7 @@ directly in cloudstack.
 
 .. |button to dedicate a zone, pod,cluster, or host| image:: /_static/images/dedicate-resource-button.png
 
-Using a SAML 2.0 Identity Provider for User Authentication
+使用SAML 2.0 Identity Provider 做用户认证
 ----------------------------------------------------------
 
 You can use a SAML 2.0 Identity Provider with CloudStack for user
